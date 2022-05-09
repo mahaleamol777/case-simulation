@@ -7,6 +7,9 @@ trigger:
 - master
 
 pool:.Default
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
 
 variables:
   solution: '**/*.sln'
