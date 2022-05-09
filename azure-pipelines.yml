@@ -7,6 +7,8 @@ trigger:
 - master
 
 pool:.Default
+image:windows-latest
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
