@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:.Default
-image:windows-latest
+pool:.
+image: 'windows-latest'
 
 - task: DotNetCoreCLI@2
   inputs:
